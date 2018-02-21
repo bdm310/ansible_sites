@@ -1,0 +1,6 @@
+- hosts: routers
+  roles:
+#    - network
+    - firewall
+    - router
+  become: true

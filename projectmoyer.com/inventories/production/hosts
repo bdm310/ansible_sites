@@ -1,0 +1,11 @@
+[loadbalancers]
+hertz.projectmoyer.com
+
+[webservers]
+dirac.projectmoyer.com
+
+[dbservers]
+dirac.projectmoyer.com
+
+[siteservers]
+dirac.projectmoyer.com

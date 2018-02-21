@@ -1,0 +1,4 @@
+- hosts: siteservers
+  become: true
+  roles:
+    - projectmoyer-site
