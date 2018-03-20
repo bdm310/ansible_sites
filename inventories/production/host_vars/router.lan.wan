@@ -1,5 +1,6 @@
 ---
 router_keepalive_state: MASTER
-router_lan_prefix: 24
+router_virt_ip: 172.21.42.1
 router_lan_ip: 172.21.42.5
 router_keepalive_priority: 100
+router_lan_prefix: 24

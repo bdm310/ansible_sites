@@ -53,11 +53,13 @@ for item in inputdata:
 for netname, netparams in networks.items():
     if 'routed' in netparams:
         routerip = ".".join(netparams['subnet'][0].split(".")[0:3] + ['5'])
+        virtip = ".".join(netparams['subnet'][0].split(".")[0:3] + ['1'])
         routernetmask = '24'
         machines['router' + domain(netname)] = {
                 'roles': ['router'], 
                 'networks': [netname, netparams['routed']], 
                 'vars': {'router_lan_ip': routerip, 
+                         'router_virt_ip': virtip, 
                          'router_lan_prefix': routernetmask, 
                          'router_keepalive_state': 'MASTER', 
                          'router_keepalive_priority': '100'}}
