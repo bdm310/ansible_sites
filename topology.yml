@@ -1,0 +1,12 @@
+- type: network
+  name: wan
+  public: true
+
+- type: network
+  name: lan
+  subnet: 172.21.42.0
+  routed: wan
+
+- type: machine
+  name: client
+  network: lan

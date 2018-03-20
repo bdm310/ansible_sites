@@ -1,0 +1,5 @@
+---
+router_keepalive_state: MASTER
+router_lan_prefix: 24
+router_lan_ip: 172.21.42.5
+router_keepalive_priority: 100
