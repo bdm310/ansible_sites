@@ -1,2 +1,3 @@
-[router.lan.wan]
-router
+- hosts: router.lan.wan
+  roles:
+    - router

@@ -69,7 +69,7 @@ hostfile.close()
 playbookfile = open(playbookpath, 'w')
 for macname, macparams in machines.items():
     if 'roles' in macparams:
-        playbookfile.write('[' + macname + ']\n' + '\n'.join(macparams['roles']))
+        playbookfile.write('- hosts: ' + macname + '\n  roles:\n    - ' + '\n    - '.join(macparams['roles']))
     if 'vars' in macparams:
         varsfile = open(inventorypath + 'host_vars/' + macname, 'w')
         varsfile.write('---\n')
