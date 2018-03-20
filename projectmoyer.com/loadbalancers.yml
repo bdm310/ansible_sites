@@ -1,5 +1,0 @@
----
-- hosts: loadbalancers
-  roles:
-    - nginx
-    - projectmoyer-proxy
