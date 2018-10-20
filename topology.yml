@@ -4,7 +4,7 @@
 
 - type: network
   name: lan
-  subnet: 172.21.42.0
+  subnet: 172.21.42.0/24
   routed: wan
 
 - type: machine
